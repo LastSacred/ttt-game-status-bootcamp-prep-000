@@ -37,7 +37,8 @@ def winner(board)
     nil
   else
     winning_combo = won?(board)
-    winning_combo[0]
+    first_winning_space = winning_combo[0]
+    board[first_winning_space]
   end
 end
 
