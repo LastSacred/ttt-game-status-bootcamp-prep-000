@@ -6,7 +6,7 @@ end
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
     win_combination.all? do |win_index|
-      fubar(win_index) == "X"
+      
     end
   end
 end
