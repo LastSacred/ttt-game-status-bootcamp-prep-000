@@ -19,7 +19,9 @@ def won?(board)
 end
 
 def full?(board)
-  
+  board.none? do |character|
+    character == " "
+  end
 end
 
 # Define your WIN_COMBINATIONS constant
