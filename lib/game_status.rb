@@ -9,7 +9,6 @@ def won?(board)
       position = board[win_index]
       position == "X"
     end
-    ||
     win_combination.all? do |win_index|
       position = board[win_index]
       position == "O"
