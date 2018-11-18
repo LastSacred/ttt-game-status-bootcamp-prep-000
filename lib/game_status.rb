@@ -4,7 +4,7 @@ def position_taken?(board, index)
 end
 
 def won?(board)
-  WIN_COMBINATIONS.detect? do |win_combination|
+  WIN_COMBINATIONS.detect do |win_combination|
     win_combination.all? do |win_index|
       board(win_index) == "X"
     end
