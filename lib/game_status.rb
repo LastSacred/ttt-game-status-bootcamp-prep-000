@@ -25,7 +25,7 @@ def full?(board)
 end
 
 def draw?(board)
-  full?(board) == true && win?(board) == false
+  full?(board) == true && won?(board) == false
 end
 
 # Define your WIN_COMBINATIONS constant
