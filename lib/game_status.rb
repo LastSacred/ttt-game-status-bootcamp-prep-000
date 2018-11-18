@@ -33,8 +33,12 @@ def over?(board)
 end
 
 def winner?(board)
-  first_win_index = won?(board)[0]
-  board[first_win_index]
+  if won?(board) == nil
+    nil
+  else
+    winning_combo = won?(board)
+    winning_combo[0]
+  end
 end
 
 # Define your WIN_COMBINATIONS constant
