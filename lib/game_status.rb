@@ -1,6 +1,4 @@
 # Helper Method
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -8,7 +6,7 @@ end
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
     win_combination.all? do |win_index|
-      board(win_index) == "X"
+      fubar(win_index) == "X"
     end
   end
 end
