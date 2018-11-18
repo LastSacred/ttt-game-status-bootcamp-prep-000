@@ -5,10 +5,9 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
-    win_combination.any? do |win_index|
-      win_index.all? do |position|
-        position = board(win_index)
-      end
+    win_combination.all? do |win_index|
+      position = board(win_index)
+      position == "X"
     end
   end
 end
