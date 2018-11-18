@@ -4,8 +4,8 @@ def position_taken?(board, index)
 end
 
 def win?(board)
-  WIN_COMBINATIONS.any? |win_combination| do
-    win_combination.all? |win_index| do
+  WIN_COMBINATIONS.any? do |win_combination|
+    win_combination.all? do |win_index|
       board(win_index) == "X"
     end
   end
