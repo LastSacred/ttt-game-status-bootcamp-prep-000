@@ -5,7 +5,7 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.detect do |win_combination|
-    board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[3]] == "X"
+    win_index_1 = win_combination[0]
   end
 end
 
